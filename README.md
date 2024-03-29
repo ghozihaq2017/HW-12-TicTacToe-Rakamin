@@ -21,7 +21,7 @@ In addition this project has 4 environments defined for different purposes:
 
 ## Project Website
 
-<a href="tictactoe-hw12-ghozi.netlify.app" target="_blank">**Visit Now** ✈️</a>
+<a href="https://tictactoe-hw12-ghozi.netlify.app/" target="_blank">**Visit Now** ✈️</a>
 
 ## Pages
 
