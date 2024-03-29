@@ -23,7 +23,7 @@ function GamePage() {
     if (move > 0) {
       description = move + '. Go to move #' + move;
     } else {
-      description = 'Game Start';
+      description = 'Start New Game';
     }
     return (
       <li key={move} className="mb-2 hover:font-bold first:hover:font-medium">
@@ -36,7 +36,7 @@ function GamePage() {
     <section className="game-page min-h-screen bg-[url('../assets/img/pattern2.png')]">
       <Navbar />
       <div className="game-content flex justify-center pt-36">
-        <div className="card w-10/12  bg-base-100 shadow-xl mb-20 md:w-8/12 xl:md:w-5/12">
+        <div className="card w-10/12  shadow-xl mb-20 md:w-8/12 xl:md:w-5/12">
           <figure className="px-10 pt-10">
             <div className="game-board">
               <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />

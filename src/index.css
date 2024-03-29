@@ -25,6 +25,7 @@
   --table-zebra: #f2f2f2;
   --font-nav: #eee;
   --btn-bg: #45abff;
+  --bg-card: #fff;
 }
 
 [data-theme='dark'] {
@@ -34,6 +35,7 @@
   --table-zebra: #191e24;
   --font-nav: #eee;
   --btn-bg: #8b4513;
+  --bg-card: #1d232a;
 }
 
 * {
@@ -72,6 +74,11 @@ body {
   background-color: var(--accent-color);
 }
 
+div.status,
+.moves-list li button {
+  color: var(--font-color);
+}
+
 .square {
   border: 2px solid var(--font-color);
 }
@@ -93,4 +100,8 @@ section.game-page {
 .moves-list li:first-child button:hover {
   background-color: var(--btn-bg);
   border: 1px solid var(--btn-bg);
+}
+
+.game-content .card {
+  background-color: var(--bg-card);
 }
