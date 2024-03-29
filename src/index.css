@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --white: #ffffff;
+  --white2: #e5e5e5;
+  --white3: #cccccc;
+  --blue: #0194f3;
+  --blue2: #015a8a;
+  --blue3: #45abff;
+  --blue4: #0062b3;
+  --navy: #00253f;
+  --navy1: #004465;
+  --darkgrey: #434343;
+  --darkmode-bg: #121212;
+  --darkmode-text: #ffffff;
+  --darkmode-accent: #1a1a1a;
+  --sepiamode-bg: #c0a080;
+  --sepiamode-text: #000000;
+  --sepia-accent: #8b4513;
+  --font-color: #434343;
+  --background-color: #eee;
+  --accent-color: #45abff;
+  --table-zebra: #f2f2f2;
+  --font-nav: #eee;
+  --btn-bg: #45abff;
+}
+
+[data-theme='dark'] {
+  --font-color: #eee;
+  --background-color: #121212;
+  --accent-color: #1a1a1a;
+  --table-zebra: #191e24;
+  --font-nav: #eee;
+  --btn-bg: #8b4513;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background 0.3s ease-in;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-color);
+  font-family: 'Montserrat', sans-serif;
+  color: var(--font-color);
+}
+
+.board-row:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+/* Set Color */
+.navbar {
+  background-color: var(--accent-color);
+  color: var(--font-nav);
+}
+
+.square {
+  background-color: var(--background-color);
+}
+
+.square:hover {
+  background-color: var(--accent-color);
+}
+
+.square {
+  border: 2px solid var(--font-color);
+}
+
+section.game-page {
+  background-image: url('./assets/img/pattern2.png');
+}
+
+.game {
+  background: var(--accent-color);
+}
+
+.moves-list li:first-child button {
+  border: 1px solid var(--font-color);
+  border-radius: 4px;
+  padding: 6px 14px;
+}
+
+.moves-list li:first-child button:hover {
+  background-color: var(--btn-bg);
+  border: 1px solid var(--btn-bg);
+}
